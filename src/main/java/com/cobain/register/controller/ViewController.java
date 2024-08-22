@@ -18,7 +18,7 @@ public class ViewController {
     private final ViewService userViewService;
 
     public ViewController(ViewService userViewService) {
-        this.userViewService = userViewService;   // @autowired 안쓰고 의존성 주입하는 방법 (생성자 주입 )
+        this.userViewService = userViewService;
     }
 
     @GetMapping("/viewbyid")

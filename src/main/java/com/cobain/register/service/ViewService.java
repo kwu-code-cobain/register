@@ -13,7 +13,7 @@ public class ViewService {
     private final UserRepository userRepository;
 
     public ViewService(UserRepository userRepository) {
-        this.userRepository = userRepository;   // @autowired 안쓰고 의존성 주입하는 방법 (생성자 주입 )
+        this.userRepository = userRepository;
 
     }
 

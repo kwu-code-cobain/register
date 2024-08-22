@@ -13,7 +13,7 @@ public class UpdateController {
     private final UpdateService updateService;
 
     public UpdateController(UpdateService updateService) {
-        this.updateService = updateService;   // @autowired 안쓰고 의존성 주입하는 방법 (생성자 주입 )
+        this.updateService = updateService;
     }
 
     @PutMapping("/updatebyid")

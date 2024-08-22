@@ -12,7 +12,7 @@ public class RegisterController {
     private final RegisterService registerService;
 
     public RegisterController(RegisterService registerService) {
-        this.registerService = registerService;   // @autowired 안쓰고 의존성 주입하는 방법 (생성자 주입 )
+        this.registerService = registerService;
     }
 
     @PostMapping("/register")

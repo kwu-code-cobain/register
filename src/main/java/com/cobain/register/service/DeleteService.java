@@ -11,7 +11,7 @@ public class DeleteService {
     private final UserRepository userRepository;
 
     public DeleteService(UserRepository userRepository) {
-        this.userRepository = userRepository;   // @Autowired 안 쓰고 의존성 주입하는 방법 (생성자 주입)
+        this.userRepository = userRepository;
     }
 
 

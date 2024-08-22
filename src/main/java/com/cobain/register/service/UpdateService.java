@@ -16,7 +16,7 @@ public class UpdateService {
     private final UserRepository userRepository;
 
     public UpdateService(UserRepository userRepository) {
-        this.userRepository = userRepository;   // @Autowired 안 쓰고 의존성 주입하는 방법 (생성자 주입)
+        this.userRepository = userRepository;
     }
 
     public UpdateResponseDto userUpdateById(String id, UpdateRequestDto updateRequestDto) {
@@ -24,9 +24,9 @@ public class UpdateService {
         if (update == null) {
             throw new NullPointerException("회원이 존재하지 않습니다");
         }
-        update.setPassword(updateRequestDto.getPassword()); // 제목 수정
+        update.setPassword(updateRequestDto.getPassword());
         update.setUserName(updateRequestDto.getUserName());
-        update.setPhoneNumber(updateRequestDto.getUserName());// 내용 수정
+        update.setPhoneNumber(updateRequestDto.getUserName());
 
         return new UpdateResponseDto(
                 update.getId(),
@@ -41,9 +41,9 @@ public class UpdateService {
         if (update == null) {
             throw new NullPointerException("회원이 존재하지 않습니다");
         }
-        update.setPassword(updateRequestDto.getPassword()); // 제목 수정
+        update.setPassword(updateRequestDto.getPassword());
         update.setUserName(updateRequestDto.getUserName());
-        update.setPhoneNumber(updateRequestDto.getUserName());// 내용 수정
+        update.setPhoneNumber(updateRequestDto.getUserName());
 
         return new UpdateResponseDto(
                 update.getId(),

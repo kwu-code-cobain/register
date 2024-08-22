@@ -18,7 +18,7 @@ public class LoginController {
     private final LoginService loginService;
 
     public LoginController(LoginService loginService) {
-        this.loginService = loginService;   // @autowired 안쓰고 의존성 주입하는 방법 (생성자 주입 )
+        this.loginService = loginService;
     }
 
     @PostMapping("/login")
